@@ -1,0 +1,15 @@
+targets:
+  ez_flutter_translation_generator:ez_flutter_translation_generator:
+    builders:
+      ez_flutter_translation_generator|translationBuilder:
+        enabled: true
+
+builders:
+  translationBuilder:
+    import: 'package:ez_flutter_translation_generator/ez_flutter_translation_generator.dart' #import this library
+    builder_factories: ['translationBuilder'] #run this method
+    build_extensions: 
+      .dart:
+        - .json
+    build_to: source
+    auto_apply: root_package
