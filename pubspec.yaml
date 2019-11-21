@@ -1,6 +1,6 @@
 name: ez_flutter_translation_generator
 description: A simple translation file generator for the EZ Flutter framework using the buildrunner.
-version: 1.0.0
+version: 1.0.1
 author: Daniel Linsenmeier <daniel@ephenodrom.de>
 homepage: https://github.com/Ephenodrom/EZ-Flutter-Translation-Generator
 publish_to: https://pub.dartlang.org

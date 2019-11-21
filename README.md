@@ -1,67 +1,34 @@
-# Dart Domainrobot Sdk
+# EZ Flutter Translation Generator
 
-The Dart Domainrobot Sdk package provides an easy integration of the domainrobot json api powered by InterNetX GmbH.
+EZ Flutter Translation Generator package is a small package for generating and updating translation file for the [EZ-Flutter framework](https://ez-flutter.de).
 
 ## Table of Contentsb
 
-1. [Preamble](#preamble)
-2. [Install And Import](#install-and-import)
-   * [pubspec.yaml](#pubspec.yaml)
-   * [Import](#import)
-3. [Usage](#usage)
-   * [The Domainrobot Provider](#the-domainrobot-provider)
-   * [Example](#example)
-4. [Changelog](#changelog)
-5. [Copyright And license](#copyright-and-license)
+1. [Install](#install)
+2. [Usage](#usage)
+3. [Changelog](#changelog)
+4. [Copyright And license](#copyright-and-license)
 
-## Preamble
+## Install
 
-As this Sdk is written in pure [Dart](https://dart.dev), it can be used on all plattforms dart is running. This includes the using of frameworks like [Flutter](https://flutter.dev), [Angular Dart](https://angulardart.dev) and many more.
-
-Important: This package is under developement and more functionalities of the domainrobot api will be covered in the future. Feel free to contribute by creating pull requests or file an issue for bugs, questions and feature requests.
-
-## Install And Import
-
-### pubspec.yaml
-
-Update pubspec.yaml and add the following line to your dependencies.
+Update the pubspec.yaml file and add the following line to your *dev* dependencies.
 
 ```yaml
-dependencies:
-  dart_domainrobot_sdk: ^0.1.0
-```
-
-### Import
-
-Import the package with :
-
-```dart
-import 'package:basic_utils/basic_utils.dart';
+dev_dependencies:
+  ez_flutter_translation_generator: ^1.0.1
 ```
 
 ## Usage
 
-### The Domainrobot Provider
+Create some translation files an */locale*. For more information check out the documentation at <https://ez-flutter.de/docs/translation>.
 
-The main functionality is covered by the [DomainRobotProvider](/lib/foo.dart) class. To use the provider, it must be instanciated with your api credentials and the matching baseUrl of the api.
+Run the following command in your command line:
 
-* Productive System: <https://api.autodns.com/v1>
-* Demo System: <https://api.demo.autodns.com/v1>
-
-```dart
-String user = "";
-String password = "";
-String context = "";
-String baseUrl = "";
-DomainRobotProvider provider = DomainRobotProvider(user,password,context,baseUrl);
+```bash
+flutter pub run build_runner build
 ```
 
-### Example
-
-See the [example](/example) folder for multiple examples.
-
-* Query expiring domains
-* Making a Domainstudio search
+This will scan the code for translations and update the translation files by adding the missing translation labels.
 
 ## Changelog
 
