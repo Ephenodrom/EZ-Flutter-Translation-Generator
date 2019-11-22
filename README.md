@@ -20,7 +20,7 @@ dev_dependencies:
 
 ## Usage
 
-Create some translation files an */locale*. For more information check out the documentation at <https://ez-flutter.de/docs/translation>.
+Create some translation files in */locale*. For more information on the translation files structur and naming conventions, check out the documentation at <https://ez-flutter.de/docs/translation>.
 
 Run the following command in your command line:
 
