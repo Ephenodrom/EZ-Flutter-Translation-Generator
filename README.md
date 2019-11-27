@@ -15,7 +15,7 @@ Update the pubspec.yaml file and add the following line to your *dev* dependenci
 
 ```yaml
 dev_dependencies:
-  ez_flutter_translation_generator: ^1.0.1
+  ez_flutter_translation_generator: ^1.0.2
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ For a detailed changelog, see the [CHANGELOG.md](CHANGELOG.md) file
 
 MIT License
 
-Copyright (c) 2019 InterNetX GmbH
+Copyright (c) 2019 Ephenodrom
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
